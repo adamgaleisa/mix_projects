@@ -103,7 +103,7 @@ public:
             auto diff = std::chrono::duration_cast<std::chrono::milliseconds>(t1-t0).count();
             if(diff > timeo || 
                !m_cv.wait_for(lck,
-                              std::chrono::milliseconds(timeo-diff),
+                              std::chrono::milliseconds(diff - timeo),
                               [this]{return m_queue.size();}))
             {
                  m_nr_waiting--;
