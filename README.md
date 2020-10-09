@@ -17,13 +17,3 @@ scrabble word attempt,
 // are possible using character of array
 this attempt tries to solve one case of scrabble game
 
-Hash Iterator
-python script
-
-two inputs, **a salt** and **an integer X**, and generates a 
-**10-character string** over the course of a large number of iterations.
-how to run 
-
-echo "machine-learning,4" >/tmp/input_file.txt
-./hash_iterator.py </tmp/input_file.txt
-
